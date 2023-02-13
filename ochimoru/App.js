@@ -6,26 +6,14 @@ export default function App() {
   const [name, setName] = useState('');
   return (
     <View style={styles.container}>
-      <View 
-      justifyContent={'center'}
-      alignItems={'center'}
-      flex={1}
-      >
-        <View>
-          <Text>
-            Ochimoru; the start of something beautiful
-          </Text>
-        </View>
-      </View>
-      <View
-      justifyContent={'center'}
-      alignItems={'center'}
-      flex={1}
-      >
+      <Text>
+        Ochimoru; the start of something beautiful
+      </Text>
+      <View>
         <TextInput
         numberOfLines={1}
         adjustsFontSizeToFit
-        style={{textAlign:'center',fontSize:50}}
+        style={{textAlign:'center',fontSize:30}}
         placeholder={"Please enter \nyour \nOchimoru's \nName"}
         onChangeText={newName => setName(newName)}
         defaultValue={name}
